@@ -63,7 +63,7 @@ If `ffmpeg` is not found, the script will still save the **GIF** and simply skip
 
 ## Notes & customization
 
-### 1) Science Lane logo (optional)
+### 1) Science Lane logo 
 The script can place a logo inside the plot. Update this line in the script:
 
 ```python
@@ -72,7 +72,7 @@ BRAND_LOGO_PATH = "/path/to/science_lane_logo.jpg"
 
 If the logo file is not found, the script falls back to a simple **[ SCIENCE LANE ]** text mark.
 
-### 2) PDB watermarks (optional)
+### 2) PDB watermarks 
 The script attempts to download PDB files from RCSB and render faint silhouette traces as watermarks:
 - `4ACH`, `4J1R`, `3SAY`, `5F94`
 
@@ -86,11 +86,11 @@ The defaults are tuned for square 1080×1080 (IG/FB/WhatsApp). You can change:
 
 ---
 
-## What the script does (high level)
+## What the script does 
 
 - Samples points from three Gaussian “allowed regions” (α-helix / β-sheet-like clusters) to mimic a Ramachandran density.
 - Uses a text mask to define where points should move to form the “2026” digits.
-- Adds fireworks bursts near the top of the plot with per-burst colors and optional element symbols.
+- Adds fireworks bursts near the top of the plot with per-burst colors and element symbols.
 - Saves the animation as GIF and (optionally) MP4.
 
 ---
